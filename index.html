@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางสูตรคูณ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ตารางสูตรคูณ</h1>
+        <label for="number">เลือกตัวเลข:</label>
+        <select id="number" onchange="generateMultiplicationTable()">
+            <option value="">--เลือก--</option>
+            <script>
+                for(let i = 1; i <= 12; i++) {
+                    document.write(`<option value="${i}">${i}</option>`);
+                }
+            </script>
+        </select>
+        <div id="multiplicationTable"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
